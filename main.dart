@@ -10,13 +10,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-  
       home: Scaffold(
-        body: Container(child: Center (child: Column(children: const [
-          Text("Di sini Image")
-        ],),),),
+        body: Container(
+          color: const Color(0xff38a60c),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/20211227_164827.jpg'),
+                const Text("Tri Rahmansyah"),
+                const Text("trirahmansyah04@gmail.com"),
+                const Text("082261899099"),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
 }
-
